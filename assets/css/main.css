@@ -14,6 +14,21 @@
 
 }
 
+html {
+  -webkit-overflow-scrolling: touch;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Ensure proper scroll behavior */
+body {
+  height: auto;
+  overflow-x: hidden;
+}
+
+
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
@@ -263,38 +278,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 .mobile-nav-toggle {
-  display: none;  /* Hide the menu icon by default */
-}
-
-/* For smaller screens, make the menu icon visible */
-@media (max-width: 768px) {  /* Or adjust this to any size you need */
-  .mobile-nav-toggle {
-    display: block;  /* Show the menu icon */
-    font-size: 30px;  /* Adjust size if needed */
-  }
-
-  /* Hide the mobile menu by default */
-  .mobile-nav {
-    display: none;
-    flex-direction: column;  /* Stack the menu vertically */
-  }
-
-  /* When 'open' class is added, show the mobile menu */
-  .mobile-nav.open {
-    display: block;
-  }
-}
-
-/* Desktop styles for the navigation (visible by default on larger screens) */
-@media (min-width: 769px) {
-  .mobile-nav {
-    display: flex;  /* Display the menu horizontally for larger screens */
-  }
-
-  /* Optionally hide the menu icon completely on large screens */
-  .mobile-nav-toggle {
-    display: none;
-  }
+  display: block;
 }
 
 .navmenu {
