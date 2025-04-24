@@ -228,7 +228,7 @@ h6 {
 
 @media (max-width: 1199px) {
   .header {
-    left: 0%;
+    left: -100%;
   }
 }
 
@@ -237,8 +237,9 @@ h6 {
 }
 
 .header .header-toggle {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
+    background-color: #333;  /* Dark background */
+  color: #fff;  /* White text */
+      opacity: 1;
   font-size: 22px;
   display: flex;
   align-items: center;
