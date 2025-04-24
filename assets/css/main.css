@@ -14,13 +14,6 @@
 
 }
 
-html {
-  -webkit-overflow-scrolling: touch;
-}
-
-html, body {
-  height: 100%;
-}
 
 /* Ensure proper scroll behavior */
 body {
@@ -279,6 +272,12 @@ h6 {
 --------------------------------------------------------------*/
 .mobile-nav-toggle {
   display: block;
+}
+
+.mobile-nav-toggle {
+  position: absolute;  /* Make it absolute instead of fixed for iPhones */
+  top: 15px;
+  right: 15px;
 }
 
 .navmenu {
