@@ -220,7 +220,6 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
   .header~main,
   .header~#footer {
     margin-left: 300px;
@@ -229,7 +228,7 @@ h6 {
 
 @media (max-width: 1199px) {
   .header {
-    left: -100%;
+    left: 0%;
   }
 }
 
@@ -264,15 +263,8 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 .mobile-nav-toggle {
-  display: none;
+  display: block;
 }
-
-@media (max-width: 768px) {
-  .mobile-nav-toggle {
-    display: block; /* Show the icon only on mobile */
-  }
-}
-
 
 .navmenu {
   padding: 0;
@@ -329,7 +321,7 @@ h6 {
   font-size: 14px;
   padding: 20px 0;
   position: relative;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), rent 90%);
 }
 
 .footer .copyright p {
