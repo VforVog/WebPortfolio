@@ -237,9 +237,8 @@ h6 {
 }
 
 .header .header-toggle {
-    background-color: #333;  /* Dark background */
-  color: #fff;  /* White text */
-      opacity: 1;
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
   font-size: 22px;
   display: flex;
   align-items: center;
