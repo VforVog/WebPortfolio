@@ -264,7 +264,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 .mobile-nav-toggle {
-  display: none;
+  display: block;
 }
 
 .navmenu {
