@@ -269,9 +269,10 @@ h6 {
 
 @media (max-width: 768px) {
   .mobile-nav-toggle {
-    display: block; /* Show the toggle button */
+    display: block; /* Show the icon only on mobile */
   }
 }
+
 
 .navmenu {
   padding: 0;
