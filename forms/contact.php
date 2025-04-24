@@ -32,4 +32,42 @@
   $contact->add_message( $_POST['message'], 'Message', 10);
 
   echo $contact->send();
+
+
+            /* Recapchta Script  */
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Get the form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    // Get the reCAPTCHA response from the form
+    $recaptcha_response = $_POST['g-recaptcha-response'];
+
+    // Your secret key (provided by Google reCAPTCHA)
+    $secret_key = '6LfddSMrAAAAAO55VlMIt-nsQe3xmcAa3zwfY-M_';
+
+    // Verify the reCAPTCHA response with Google API
+    $recaptcha_verify_url = 'https://www.google.com/recaptcha/api/siteverify';
+    $response = file_get_contents($recaptcha_verify_url . "?secret=" . $secret_key . "&response=" . $recaptcha_response);
+    $response_keys = json_decode($response);
+
+    if (intval($response_keys->success) !== 1) {
+        // If reCAPTCHA failed
+        echo "Please verify that you're not a robot.";
+    } else {
+        // If reCAPTCHA passed, proceed to send the email
+        $to = "stelios_vogiatzis@hotmail.com";  // Replace with your email
+        $subject = "New message from contact form";
+        $body = "Name: $name\nEmail: $email\nMessage: $message";
+        $headers = "From: $email";
+
+        if (mail($to, $subject, $body, $headers)) {
+            echo "Thank you! Your message has been sent.";
+        } else {
+            echo "Oops! Something went wrong, please try again.";
+        }
+    }
+}
 ?>
