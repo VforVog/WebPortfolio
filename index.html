@@ -86,7 +86,7 @@
           
         <h2>Stylianos Vogiatzis</h2>
         <p>I'm <span class="typed" data-typed-items="Cloud Solutions Architect | DevOps | Full Stack Dev | CyberSec">Cloud</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-        <button class="start-button" onclick="toggleMatrix()" style="margin-left: 86%; margin-top: 25%;">Start the Matrix</button>
+        <button class="start-button" onclick="toggleMatrix()" style="margin-left: 80%; margin-top: 23%;">Start the Matrix</button>
       
           
       </div>
@@ -97,7 +97,7 @@
         
         <!-- Matrix Rain Script -->
   <script>
-   const rainContainer = document.querySelector('.rain');
+const rainContainer = document.querySelector('.rain');
 const drizzleContainer = document.querySelector('.drizzle');
 const button = document.querySelector('.start-button');
 const columns = 40;
@@ -105,6 +105,7 @@ const streamLength = 16;
 const drops = 60;
 let isRunning = false;
 
+      
 function randomBinaryString(length) {
   let str = '';
   for (let i = 0; i < length; i++) {
@@ -113,13 +114,15 @@ function randomBinaryString(length) {
   return str;
 }
 
+      
 function toggleMatrix() {
   if (isRunning) {
     rainContainer.innerHTML = ''; 
     drizzleContainer.innerHTML = ''; 
     isRunning = false;
     button.textContent = "Start the Matrix";
-  } else {
+  } 
+    else {
     isRunning = true;
     button.textContent = "Stop the Matrix";
 
@@ -162,7 +165,6 @@ function toggleMatrix() {
     }
   }
 }
-
   </script>
         <!-- End Matrix Rain Script -->
 
