@@ -40,13 +40,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Get the form data
     $name = $_POST['name'];
     $email = $_POST['email'];
+    $subject = $_POST['subject'];
     $message = $_POST['message'];
 
     // Get the reCAPTCHA response from the form
     $recaptcha_response = $_POST['g-recaptcha-response'];
 
     // Your secret key (provided by Google reCAPTCHA)
-    $secret_key = '6LfddSMrAAAAAO55VlMIt-nsQe3xmcAa3zwfY-M_';
+    $secret_key = 'secret';
 
     // Verify the reCAPTCHA response with Google API
     $recaptcha_verify_url = 'https://www.google.com/recaptcha/api/siteverify';
