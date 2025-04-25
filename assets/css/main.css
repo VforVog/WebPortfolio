@@ -648,6 +648,45 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Licenses Section
+--------------------------------------------------------------*/
+.card-container {
+    padding: 15px; /* Add some space around the card container */
+    
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd; /* Border around the card */
+    border-radius: 13px; /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the cards */
+    margin-bottom: 20px; /* Space between cards */
+    width: 100%; /* Adjust width to make the card smaller */
+    max-width: 400px; /* Max width for the card */
+    height: auto; /* Adjust height according to content */
+}
+
+.card img {
+    max-width: 100%; /* Ensure the image fits within the card */
+    height: auto; /* Maintain aspect ratio of the image */
+    border-radius: 8px; /* Round the corners of the image */
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333; /* Set text color */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+    transform: translateY(-5px); /* Moves the card up slightly */
+}
+
+
+/*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
 .skills .progress {
@@ -1086,6 +1125,17 @@ body.light .signatures {
   font-size: var(--text-small);
   margin-block-end: var(--gutter-nano);
   margin-inline-start: var(--gutter-nano);
+}
+
+/*--------------------------------------------------------------
+# Carousel Dots 
+--------------------------------------------------------------*/
+
+.carousel-indicators [data-bs-target] {
+  background-color: purple;  /* or whatever color fits your design */
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
 }
 
 /*--------------------------------------------------------------
