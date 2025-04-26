@@ -335,8 +335,7 @@ h6 {
   font-size: 14px;
   padding: 20px 0;
   position: relative;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), rent 90%);
-}
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);}
 
 .footer .copyright p {
   margin-bottom: 0;
@@ -785,6 +784,7 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -796,11 +796,10 @@ section,
   cursor: pointer;
   display: inline-block;
   padding: 0;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 19px;
+  font-weight: 500;
   margin: 0 10px;
   line-height: 1;
-  text-transform: uppercase;
   margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
 }
@@ -825,75 +824,96 @@ section,
   }
 }
 
+
+
+
 .portfolio .portfolio-content {
+  background-color:rgba(0, 0, 0, 0.07); /* Dark background */
+  border: 1px solid #333; /* Darker border */
+  border-radius: 13px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Stronger, bigger shadow */
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.portfolio .portfolio-content .image-link {
+  display: block;
+  text-decoration: none;
+}
+
+.portfolio .portfolio-content .image-wrapper {
   position: relative;
   overflow: hidden;
+  border-radius: 18px;
+  height: 335px; /* fixed image area height */
 }
 
-.portfolio .portfolio-content img {
-  transition: 0.3s;
+.portfolio .portfolio-content .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* make the image fill without distortion */
+  border-radius: 18px;
+  display: block;
+  transition: 0.4s ease;
 }
 
-.portfolio .portfolio-content .portfolio-info {
-  opacity: 0;
+.portfolio .portfolio-content .image-wrapper h4 {
   position: absolute;
-  inset: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-}
-
-.portfolio .portfolio-content .portfolio-info h4 {
+  top: 0px;
+  left: -7px;
+  background-color: purple;
+  color: #fff;
   font-size: 14px;
-  padding: 5px 10px;
   font-weight: 400;
-  color: #ffffff;
-  display: inline-block;
-  background-color: var(--accent-color);
+  padding: 6px 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
-.portfolio .portfolio-content .portfolio-info p {
+.portfolio .portfolio-content .image-wrapper .hover-description {
   position: absolute;
-  bottom: 10px;
-  text-align: center;
-  display: inline-block;
+  bottom: 0;
   left: 0;
   right: 0;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.portfolio .portfolio-content .portfolio-info .preview-link,
-.portfolio .portfolio-content .portfolio-info .details-link {
-  position: absolute;
-  left: calc(50% - 40px);
-  font-size: 26px;
-  top: calc(50% - 14px);
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
-  transition: 0.3s;
-  line-height: 1.2;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link:hover,
-.portfolio .portfolio-content .portfolio-info .details-link:hover {
-  color: var(--accent-color);
+.portfolio .portfolio-content .image-wrapper:hover img {
+  transform: scale(1.1);
 }
 
-.portfolio .portfolio-content .portfolio-info .details-link {
-  left: 50%;
-  font-size: 34px;
-  line-height: 0;
-}
-
-.portfolio .portfolio-content:hover .portfolio-info {
+.portfolio .portfolio-content .image-wrapper:hover .hover-description {
   opacity: 1;
 }
 
-.portfolio .portfolio-content:hover img {
-  transform: scale(1.1);
+.portfolio .portfolio-content .portfolio-description {
+  text-align: center;
+  margin-top: 15px;
 }
+
+.portfolio .portfolio-content .portfolio-description p {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -1225,3 +1245,4 @@ body.light .signatures {
     .start-button:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
     }
+

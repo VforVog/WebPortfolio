@@ -1,0 +1,1 @@
+I set it up with a free tier on Formspree cause my Server -Netlify- doesnt support php

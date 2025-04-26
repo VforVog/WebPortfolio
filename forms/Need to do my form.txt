@@ -1,3 +1,0 @@
-SMTP -> In order to work needs to be uploaded online
-
-And i need to save the script in a different server cause Netlify doesn suppot it.
