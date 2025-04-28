@@ -7,7 +7,7 @@ Enjoy:)
 Languages Used:
 •Html - •Css •Js •Php
 
-__ Key Factors of the Website: __
+** Key Factors of the Website: **
 -ChatBot 
 -Contact Form
 -Captcha
