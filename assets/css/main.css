@@ -1246,3 +1246,35 @@ body.light .signatures {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
     }
 
+/*--------------------------------------------------------------
+# Colorfull Tech Bullet
+--------------------------------------------------------------*/
+
+.tech-stack {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    background: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.tech-item::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: var(--color, #000); /* fallback black if no color given */
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+

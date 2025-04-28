@@ -95,12 +95,33 @@
             <li data-filter=".filter-certifications">• Certifications</li>
             <li data-filter=".filter-projects">• Projects</li>
             <li data-filter=".filter-languages">• Languages</li>
-          </ul><br>
+          </ul>
+                    
+            <!-- Sub-filters for Certifications (hidden by default) -->
+            
+            <ul class="portfolio-filters isotope-filters" id="certifications-subfilters" style="display:none; justify-content: center;">
+                <li data-filter=".filter-cert-cloud" style="font-size: 16px; font-style: italic;">Cloud Certifications</li>
+                <li data-filter=".filter-cert-education" style="font-size: 16px; font-style: italic;">Education Certifications</li>
+            </ul>
+            
+            <!-- Sub-filters for Projects (hidden by default) -->
+            
+            
+            <!-- Sub-filters for Projects -->
+            
+            <ul class="portfolio-filters isotope-filters" id="projects-subfilters" style="display:none; justify-content:center;">
+                <li data-filter=".filter-proj-cloud" style="font-size: 16px; font-style: italic;">Cloud Projects</li>
+                <li data-filter=".filter-proj-coding" style="font-size: 16px; font-style: italic;">Coding Projects</li>
+                <li data-filter=".filter-proj-business" style="font-size: 16px; font-style: italic;">Business Projects</li>
+                <li data-filter=".filter-proj-security" style="font-size: 16px; font-style: italic;">Security Projects</li>
+            </ul><br>
+            
             <!-- End Portfolio Filters -->
+            
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications filter-cert-cloud">
                 <div class="portfolio-content h-100">
                     <a href="https://www.credly.com/badges/3c335f9a-88ed-43ef-a867-59de7f88bbbd/public_url" class="image-link" target="_blank">
                         <div class="image-wrapper">
@@ -119,7 +140,7 @@
               
               <!-- End Portfolio Item -->
               
-               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-cloud">
                 <div class="portfolio-content h-100">
                     <a href="https://github.com/VforVog/AWS-FacialRecognition-App" class="image-link" target="_blank">
                         <div class="image-wrapper">
@@ -132,6 +153,38 @@
                     </a>
                     <div class="portfolio-description">
                         <p>Face Recognition App - AWS Based</p>
+                        <!-- Colorfull Tech Bullet -->
+                        <div class="tech-stack">
+                            <span class="tech-item" style="--color: #3776AB;">Python</span>
+                            <span class="tech-item" style="--color: linear-gradient(to right, orange 50%, black 50%);">AWS</span>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+              </div>
+              
+              <!-- End Portfolio Item -->
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-cloud">
+                <div class="portfolio-content h-100">
+                    <a href="https://github.com/VforVog/AwsPartyRock" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/AwsPartyRock.jpg" class="img-fluid" alt="Cloud Project">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to GitHub project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>AWS Party Rock</p>
+                        
+                        <!-- Colorfull Tech Bullet -->
+                        <div class="tech-stack">
+                            <span class="tech-item" style="--color: linear-gradient(to right, orange 50%, black 50%);">AWS</span>
+                        </div>
+                        
                     </div>
                 </div>
               </div>
@@ -139,7 +192,7 @@
               <!-- End Portfolio Item -->
                
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications filter-cert-cloud">
                 <div class="portfolio-content h-100">
                     <a href="https://www.credly.com/badges/947ebf35-7f5c-4ed8-aeba-9b708053214d/public_url" class="image-link" target="_blank">
                         <div class="image-wrapper">
@@ -158,7 +211,7 @@
               
               <!-- End Portfolio Item -->
               
-               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-coding">
                 <div class="portfolio-content h-100">
                     <a href="https://github.com/VforVog/Python-PersonalVirtualBot-App-ChatGPT-API" class="image-link" target="_blank">
                         <div class="image-wrapper">
@@ -171,15 +224,224 @@
                     </a>
                     <div class="portfolio-description">
                         <p>Personal ChatBot App - ChatGPT API</p>
+                        
+                         <!-- Colorfull Tech Bullet -->
+                        <div class="tech-stack">
+                            <span class="tech-item" style="--color: #3776AB;">Python</span>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+              
+
+               <!-- End Portfolio Item -->
+              
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-security">
+                <div class="portfolio-content h-100">
+                    <a href="https://drive.google.com/drive/u/0/folders/1AIfdvaLcszgNZyRdVOGLjxe5pvSKIgVK" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/security.jpeg" class="img-fluid" alt="Security">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to Google Drive project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Security of Smart Devices</p>           
+                    </div>
+                </div>
+              </div>
+              
+               <!-- End Portfolio Item -->
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-security">
+                <div class="portfolio-content h-100">
+                    <a href="https://drive.google.com/drive/u/0/folders/1GHoQh9S2B-XzQIyVDk-DaKO4DgpN8Z_Z" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/cybersec.png" class="img-fluid" alt="Cyber Security">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to Google Drive project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Cyber Security | Encryption - Decryption Project</p>                     
+                    </div>
+                </div>
+              </div>
+
+              <!-- End Portfolio Item -->
+              
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-security">
+                <div class="portfolio-content h-100">
+                    <a href="https://drive.google.com/drive/u/0/folders/1C4vupBAtCKcGXkmwdUWmqA8ZAQ93ltdH" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/gdpr.jpeg" class="img-fluid" alt="GDPR">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to Google Drive project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>GDPR -Data on the Web</p>                     
+                    </div>
+                </div>
+              </div>
+
+              <!-- End Portfolio Item -->
+            
+              
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-business">
+                <div class="portfolio-content h-100">
+                    <a href="https://drive.google.com/drive/u/0/folders/1pxGCrlCaEnGLuw_ZcGXGUQRbVKpVj3MY" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/business%20evolution.jpeg" class="img-fluid" alt="Business Evolution">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to Google Drive project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Business Evolution Project</p>                     
+                    </div>
+                </div>
+              </div>
+
+              <!-- End Portfolio Item -->
+              
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-business">
+                <div class="portfolio-content h-100">
+                    <a href="https://drive.google.com/drive/u/0/folders/14QZKQvCdfIA0puC1raMKvRLiRwfiWR3t" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/business%20strategic%20plans.jpeg" class="img-fluid" alt="Business">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to Google Drive project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Business Strategic Plans</p>                     
+                    </div>
+                </div>
+              </div>
+
+              <!-- End Portfolio Item -->
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-business">
+                <div class="portfolio-content h-100">
+                    <a href="https://drive.google.com/drive/u/0/folders/1ANiy1YcoVjupoNyifFBxhlEHnw9kJAgU" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/project_management.jpg" class="img-fluid" alt="Business">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to Google Drive project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Project Management and Planning</p>                     
+                    </div>
+                </div>
+              </div>
+
+              <!-- End Portfolio Item -->
+              
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-business">
+                <div class="portfolio-content h-100">
+                    <a href="https://drive.google.com/drive/u/0/folders/1ZnxKfZCVL4V98NEL5pAeIHdodXqsOdG8" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/business%20analysis.jpeg" class="img-fluid" alt="Business">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to Google Drive project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Analysis of Business Models with AI for Optimiz.</p>                     
+                    </div>
+                </div>
+              </div>
+
+              <!-- End Portfolio Item -->
+              
+              
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-business">
+                <div class="portfolio-content h-100">
+                    <a href="https://drive.google.com/drive/u/0/folders/1_FzUtTp40DaZrQwiDDznmLX2HGoDeo7l" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/information%20system%20processes.jpeg" class="img-fluid" alt="Business">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to Google Drive project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Architectures -Information Systems n Processes</p>                     
+                    </div>
+                </div>
+              </div>
+
+              <!-- End Portfolio Item -->
+              
+              
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-business">
+                <div class="portfolio-content h-100">
+                    <a href="https://drive.google.com/drive/u/0/folders/1b_YD_Av6hz2fjW2KNERhqPZY5Iq9yDo9" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/digital%20marketing.jpeg" class="img-fluid" alt="Digital Marketing">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to Google Drive project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Digital Marketign - Projects</p>                     
+                    </div>
+                </div>
+              </div>
+
+              <!-- End Portfolio Item -->
+              
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-coding">
+                <div class="portfolio-content h-100">
+                    <a href="https://github.com/VforVog/WebPortfolio" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/webportfolio.jpeg" class="img-fluid" alt="WebPortfolio">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to GitHub project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>My WebPortfolio</p>
+                        <!-- Colorfull Tech Bullet -->
+                        <div class="tech-stack">
+                            <span class="tech-item" style="--color: #FFA500;">Html</span>
+                            <span class="tech-item" style="--color: #800080;">Css</span>
+                            <span class="tech-item" style="--color: #FFFF00;">Js</span>
+                            <span class="tech-item" style="--color: #4F5D95;">Php</span>
+                        </div>
+                        
                     </div>
                 </div>
               </div>
               
               <!-- End Portfolio Item -->
                    
-                                      
+                                  
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications filter-cert-cloud">
                 <div class="portfolio-content h-100">
                     <a href="https://www.credly.com/badges/f48e266a-af24-4a9c-b54a-c60a484c31df/public_url" class="image-link" target="_blank">
                         <div class="image-wrapper">
@@ -192,6 +454,220 @@
                     </a>
                     <div class="portfolio-description">
                         <p>MCP Certified 365</p>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- End Portfolio Item -->
+                    
+                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-coding">
+                <div class="portfolio-content h-100">
+                    <a href="https://github.com/VforVog/Idle-AquaGame-Version2" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/idle.jpg" class="img-fluid" alt="C#Idle">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to GitHub project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Idle Aqua Game</p>
+                        <!-- Colorfull Tech Bullet -->
+                         <div class="tech-stack">
+                            <span class="tech-item" style="--color: #008000;">C#</span>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+              
+              <!-- End Portfolio Item -->
+                         
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-coding">
+                <div class="portfolio-content h-100">
+                    <a href="https://github.com/VforVog/C-AirlineReservationSystem" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/c.jpg" class="img-fluid" alt="C-Airline">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to GitHub project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Airline Reservation System</p>
+                        <!-- Colorfull Tech Bullet -->
+                         <div class="tech-stack">
+                            <span class="tech-item" style="--color: #808080;">C</span>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+              
+              <!-- End Portfolio Item -->
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-coding">
+                <div class="portfolio-content h-100">
+                    <a href="https://drive.google.com/drive/u/0/folders/16G1ZtjROKeTlCSgHZxf_pHcP6kfHpyAV" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/sql.jpg" class="img-fluid" alt="SQL">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to Google Drive project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>SQL Flight Data Base</p>
+                        <!-- Colorfull Tech Bullet -->
+                         <div class="tech-stack">
+                            <span class="tech-item" style="--color: #e38c00;">SQL</span>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+              
+              <!-- End Portfolio Item -->
+          
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-coding">
+                <div class="portfolio-content h-100">
+                    <a href="https://github.com/VforVog/Java-Game-Connect4" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/java.png" class="img-fluid" alt="JavaGame">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to GitHub project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Java Game - Connect 4</p>
+                        <!-- Colorfull Tech Bullet -->
+                         <div class="tech-stack">
+                            <span class="tech-item" style="--color: #b07219;">Java</span>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+              
+                    <!-- End Portfolio Item -->
+              
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-coding">
+                <div class="portfolio-content h-100">
+                    <a href="https://github.com/VforVog/TechEshop-UniProject/tree/main" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/uniproj.jpeg" class="img-fluid" alt="WebPortfolio">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to GitHub project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>My Tech E-Shop University Project</p>
+                        <!-- Colorfull Tech Bullet -->
+                        <div class="tech-stack">
+                            <span class="tech-item" style="--color: #4F5D95;">Php</span>
+                            <span class="tech-item" style="--color: #e38c00;">SQL</span>
+                            <span class="tech-item" style="--color: #FFA500;">Html</span>
+                            <span class="tech-item" style="--color: #800080;">Css</span>
+                            <span class="tech-item" style="--color: #FFFF00;">Js</span>                         
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+              
+                      
+              <!-- End Portfolio Item -->
+              
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-business">
+                <div class="portfolio-content h-100">
+                    <a href="https://drive.google.com/drive/u/0/folders/1RdMQUzxmEx-q4rLGKNUE-9ScSGlVCAMV" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/Statistics.jpeg" class="img-fluid" alt="Statistics ">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to Google Drive project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Applied Statistics and Quality Control</p>                     
+                    </div>
+                </div>
+              </div>
+
+              <!-- End Portfolio Item -->
+              
+              
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-business">
+                <div class="portfolio-content h-100">
+                    <a href="https://drive.google.com/drive/u/0/folders/1TmJGif8V0-MeTaIe_Q7UeHteKQPiOGuY" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/analysisanddesign.jpg" class="img-fluid" alt="Design and Analysis ">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to Google Drive project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Analysis and Design of Information Systems</p>                     
+                    </div>
+                </div>
+              </div>
+
+              <!-- End Portfolio Item -->
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-coding">
+                <div class="portfolio-content h-100">
+                    <a href="https://github.com/VforVog/MicroBit-SunLightSensor" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/microbit.jpeg" class="img-fluid" alt="MicroBit SunlightSensor">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to GitHub project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>MicroBit Sunlight Sensor</p>
+                        <!-- Colorfull Tech Bullet -->
+                         <div class="tech-stack">
+                            <span class="tech-item" style="--color: #000000;">MicroBit</span>
+                        </div>
+
+                    </div>
+                </div>
+              </div>
+              
+              <!-- End Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-proj-coding">
+                <div class="portfolio-content h-100">
+                    <a href="https://github.com/VforVog/Scratch-FlappyBird-Game" class="image-link" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/portfolio/Projects/scratch.jpeg" class="img-fluid" alt="Scrath FlappyBird">
+                            <h4>Projects </h4>
+                            <div class="hover-description">
+                            <p>Click to transfer to GitHub project</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="portfolio-description">
+                        <p>Scratch Flappy Bird Game</p>
+                        <!-- Colorfull Tech Bullet -->
+                         <div class="tech-stack">
+                            <span class="tech-item" style="--color: #000000;">Scratch</span>
+                        </div>
+                        
                     </div>
                 </div>
               </div>
@@ -222,7 +698,7 @@
                         
                           
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications filter-cert-education">
                 <div class="portfolio-content h-100">
                     <a href="assets/img/portfolio/Certifications/teaching.jpg" class="image-link" target="_blank">
                         <div class="image-wrapper">
@@ -244,7 +720,7 @@
                               
         
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications filter-cert-education">
                 <div class="portfolio-content h-100">
                     <a href="https://drive.google.com/drive/folders/1T41UtilIziEPcCiMwlrpsvPabFI_ygZ_?usp=sharing" class="image-link" target="_blank">
                         <div class="image-wrapper">
@@ -266,7 +742,7 @@
                                   
                                  
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certifications filter-cert-education">
                 <div class="portfolio-content h-100">
                     <a href="https://drive.google.com/drive/folders/1T41UtilIziEPcCiMwlrpsvPabFI_ygZ_?usp=sharing" class="image-link" target="_blank">
                         <div class="image-wrapper">
@@ -323,27 +799,6 @@
               </div>
               
               <!-- End Portfolio Item -->
-              
-              
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
-                <div class="portfolio-content h-100">
-                    <a href="https://github.com/VforVog/AwsPartyRock" class="image-link" target="_blank">
-                        <div class="image-wrapper">
-                            <img src="assets/img/portfolio/Projects/AwsPartyRock.jpg" class="img-fluid" alt="">
-                            <h4>Language</h4>
-                            <div class="hover-description">
-                            <p>Click to transfer to GitHub project</p>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="portfolio-description">
-                        <p>AWS Party Rock</p>
-                    </div>
-                </div>
-              </div>
-              
-              <!-- End Portfolio Item -->
-              
    
               
           </div>
@@ -354,7 +809,9 @@
 
       </div>
         
+<script src="assets/js/hidden-filterbar-portfolio.js"></script>
 
+        
     </section>
       <!-- /Portfolio Section -->
       
