@@ -688,39 +688,55 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
+/* Distance from skill to skill  */
+
 .skills .progress {
-  height: 60px;
+  height: 45px;
   display: block;
   background: none;
-  border-radius: 0;
-}
-
-.skills .progress .skill {
-  color: var(--heading-color);
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: var(--heading-font);
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .skills .progress-bar-wrap {
   background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
+  height: 24px; 
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
 }
 
 .skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
+  height: 100%;
+  background: linear-gradient(to right, #3498db, #8e44ad);
+  border-radius: 50px;
+  transition: width 0.9s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 5px; 
+  position: relative;
 }
+
+.skill-name {
+  color: white;
+  font-weight: 600;
+  font-size: 14px; 
+  position: relative;
+  padding-right: 50%;
+  z-index: 2;
+}
+
+.skill-level {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
 
 /*--------------------------------------------------------------
 # Resume Section
