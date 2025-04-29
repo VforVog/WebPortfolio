@@ -742,12 +742,27 @@ section,
 # Resume Section
 --------------------------------------------------------------*/
 .resume .resume-title {
-  color: var(--heading-color);
+  display: inline-block;
+  background: linear-gradient(to right, #0F7AB5, #813F97);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+  .resume-title:hover {
+      transform: scale(1.03);
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
