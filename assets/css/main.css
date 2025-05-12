@@ -333,7 +333,7 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
-  padding: 20px 0;
+  padding: 20px 0; 
   position: relative;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);}
 
