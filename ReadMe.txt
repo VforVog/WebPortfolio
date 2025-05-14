@@ -16,4 +16,4 @@ Key Factors of the Website:
 -APIs -Google, ChatGPT
 -Connectivity with multiple Technologies
 -Interal n' External Links
-
+-Https - Secure connection 
