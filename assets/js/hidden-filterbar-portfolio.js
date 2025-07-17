@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 projSubfilters.style.display = 'none';
             }
             // Project related
-            else if (filterValue === '.filter-projects' || filterValue === '.filter-proj-cloud' || filterValue === '.filter-proj-coding' || filterValue === '.filter-proj-business' || filterValue === '.filter-proj-security') {
+            else if (filterValue === '.filter-projects' || filterValue === '.filter-proj-research' || filterValue === '.filter-proj-cloud' || filterValue === '.filter-proj-coding' || filterValue === '.filter-proj-business' || filterValue === '.filter-proj-security') {
                 projSubfilters.style.display = 'flex';
                 certSubfilters.style.display = 'none';
             }
