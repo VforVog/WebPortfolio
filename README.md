@@ -39,4 +39,7 @@ Enjoy :)
 
 ---
 
-Simulation
+Simulation <br>
+
+
+![Simulation](gif/website.gif)
