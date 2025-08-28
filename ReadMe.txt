@@ -1,5 +1,7 @@
-
-<br><p align="center"><b> Welcome to my Website [Portfolio](https://stylianosvogiatzis.eu/) 🌐! </b></p><br>
+<p align="center">
+  <b>Welcome to my Website <a href="https://stylianosvogiatzis.eu/">Portfolio</a> 🌐!</b>
+</p>
+<br>
 
   
 Enjoy:) 
