@@ -21,7 +21,7 @@ Enjoy :)
 - **Captcha** for spam protection  
 - **Animations** for interactive UI  
 - **CI/CD** for automated deployment on the server  
-- **APIs Integration**: Google, ChatGPT  
+- **APIs Integration**: Google  
 - **Connectivity** with multiple technologies  
 - **Internal & External Links**  
 - **HTTPS** secure connection  
