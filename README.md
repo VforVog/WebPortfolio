@@ -17,14 +17,26 @@ Enjoy :)
 ---
 
 <b>⭐ Key Features </b>
-- **Contact Form**  
+
+- **Contact Form** with validation  
 - **Captcha** for spam protection  
 - **Animations** for interactive UI  
 - **CI/CD** for automated deployment on the server  
-- **APIs Integration**: Google  
+- **DNS Setup & Custom Domain** for professional deployment  
+- **APIs Integration**: Google
+- **Responsive Design** for mobile and desktop
+- **HTTPS Secure Connection**
+- **Performance Optimization**: fast loading and caching  
+- **SEO Optimization** for better search visibility  
+- **Analytics Integration** for traffic tracking  
+- **Error Handling & Logging**  
+- **Cross-Browser Compatibility**
 - **Connectivity** with multiple technologies  
 - **Internal & External Links**  
-- **HTTPS** secure connection  
+  
+  
+  
+
 
 ---
 
