@@ -8,7 +8,7 @@ Enjoy :)
 
 ---
 
-# 🛠 Languages Used
+<b> 🛠 Languages Used </b>
 - HTML  
 - CSS  
 - JavaScript  
@@ -16,7 +16,7 @@ Enjoy :)
 
 ---
 
-# ⭐ Key Features
+<b>⭐ Key Features </b>
 - **Contact Form**  
 - **Captcha** for spam protection  
 - **Animations** for interactive UI  
@@ -28,7 +28,7 @@ Enjoy :)
 
 ---
 
-# 🚀 How to Use / Access
+<b> 🚀 How to Use / Access </b>
 Visit the live website here: [Portfolio](https://stylianosvogiatzis.eu/) 🌐  
 
 Enjoy exploring! 🎉
