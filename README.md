@@ -28,7 +28,4 @@ Enjoy :)
 
 ---
 
-<b> 🚀 How to Use / Access </b>
-Visit the live website here: [Portfolio](https://stylianosvogiatzis.eu/) 🌐  
-
-Enjoy exploring! 🎉
+Simulation
