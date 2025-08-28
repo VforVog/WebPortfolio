@@ -18,8 +18,7 @@ Enjoy :)
 
 <b>⭐ Key Features </b>
 
-- **Contact Form** with validation  
-- **Captcha** for spam protection  
+- **Contact Form with Validation and Automated email notification push to Owner** – Users submit messages securely, and the site owner receives an automated email  
 - **Animations** for interactive UI  
 - **CI/CD** for automated deployment on the server  
 - **DNS Setup & Custom Domain** for professional deployment  
