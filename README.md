@@ -42,4 +42,4 @@ Enjoy :)
 Simulation <br>
 
 
-![Simulation](gif/websitee.gif)
+![Simulation](gif/website.gif)
